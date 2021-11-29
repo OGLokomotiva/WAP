@@ -1,63 +1,63 @@
 body {
-  height: 100vh;
-  background: linear-gradient(black, rgba(0, 0, 0, 0));
+    margin: 0%;
+    background-color: black;
 }
 
-.planet,
-.star {
-  position: absolute;
-  width: var(--size);
-  height: var(--size);
-  top: calc(50% - var(--size) / 2);
-  left: calc(50% - var(--size) / 2);
-  border-radius: 50%;
+div {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sun {
-  --size: 100px;
-  --push: 0px;
-  background: linear-gradient(45deg, goldenrod, yellow);
-  animation: orbit 1s infinite linear;
+.star-sun {
+    width: 10em; height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 15em;
 }
 
-.mercury {
-  --size: 20px;
-  --push: 80px;
-  background: grey;
-  animation: orbit 1.5s infinite linear;
+.orbit {
+    width: 14em; height: 14em;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-top: -12em;
+    animation: rotate 4s infinite linear;
 }
-
-.venus {
-  --size: 24px;
-  --push: 120px;
-  background: orangered;
-  animation: orbit 2s infinite linear;
+@keyframes rotate {
+    from {
+        transform: rotateZ(360deg);
+      }
+    to {
+        transform: rotateZ(0deg);
+    }
 }
-
-.earth {
-  --size: 40px;
-  --push: 160px;
-  background: cornflowerblue;
-  animation: orbit 2.5s infinite linear;
+.suborbit {
+    width: 4.8em; height: 4.8em;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-top: -4.429em;
+    animation: rotate 2s infinite linear;
 }
-
-.mars {
-  --size: 30px;
-  --push: 200px;
-  background: crimson;
-  animation: orbit 3s infinite linear;
+.moon {
+    width: 1em; height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 4.4em;
 }
-
-.jupiter {
-  --size: 70px;
-  --push: 260px;
-  background: darksalmon;
-  animation: orbit 3.5s infinite linear;
+.planet-mercury {
+    width: 2em; height: 2em;
+    background-color: brown;
+    border-radius: 50%;
+    margin-top: 13em;
 }
-
-
-
-  to {
-    transform: rotate(360deg) translateX(var(--push));
-  }
+.planet-venus {
+    width: 3em; height: 3em;
+    background-color: rgb(194, 171, 45);
+    border-radius: 50%;
+    margin-top: 2em;
+}
+.planet-earth {
+    width: 4em; height: 4em;
+    background-color: blue;
+    border-radius: 50%;
+    margin-top: 2em;
 }
