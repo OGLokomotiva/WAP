@@ -1,0 +1,66 @@
+body {
+    margin: 0%;
+    background-color: black;
+}
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+@keyframes orbit-anim {
+    from {
+        transform: rotateZ(360deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+.orbit-1 {
+    width: 7em; height: 7em;
+    border: 1px solid white;
+    margin-top: -6.6em;
+    animation: orbit-anim 3s linear infinite;
+}
+.orbit-2 {
+    width: 9em; height: 9em;
+    border: 1px solid white;
+    margin-top: -8.1em;
+    animation: orbit-anim 5s linear infinite;
+}
+.orbit-3 {
+    width: 12.7em; height: 12.7em;
+    border: 1px solid white;
+    margin-top: -10.94em;
+    animation: orbit-anim 10s linear infinite;
+}
+.sub-orbit {
+    width: 1.7em; height: 1.7em;
+    border: 1px solid white;
+    margin-top: -1.57em;
+    animation: orbit-anim 1s linear infinite;
+}
+.sun {
+    width: 6em; height: 6em;
+    margin-top: 20%;
+    background-color: rgb(255, 251, 22);
+}
+.mercury {
+    width: 0.5em; height: 0.5em;
+    margin-top: -0.3em;
+    background-color: rgb(255, 115, 0);
+}
+.venus {
+    width: 1em; height: 1em;
+    margin-top: -0.5em;
+    background-color: rgb(218, 176, 63);
+}
+.earth {
+    width: 1.3em; height: 1.3em;
+    margin-top: -0.68em;
+    background-color: rgb(6, 68, 241);
+}
+.earth-moon {
+    background-color: rgb(255, 255, 255);
+    width: 0.33em; height: 0.33em;
+    margin-top: -0.2em;
+}
