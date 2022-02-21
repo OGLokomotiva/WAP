@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+  margin: 0px;
+  background: black;
+}
+
+header {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+  min-height: 10rem;
+  background-color: rgba(7, 160, 180, 0.349);
+  font-size: 1.4em;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-left: 0.5em;
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  color: green;
+  font-size: 1.2em;
+}
