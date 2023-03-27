@@ -1,0 +1,11 @@
+CREATE SCHEMA IF NOT EXISTS `hotel_plaza` DEFAULT CHARACTER SET utf8 COLLATE utf8_czech_ci;
+USE `hotel_plaza`;
+CREATE TABLE IF NOT EXISTS `apartments` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `floor` VARCHAR(50) NOT NULL,
+  `number` VARCHAR(255) NOT NULL,
+  `number_of_persons` VARCHAR(6) NOT NULL,
+  `state` VARCHAR(20) NOT NULL,
+  `created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
